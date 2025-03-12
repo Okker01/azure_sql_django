@@ -9,4 +9,7 @@ urlpatterns = [
          views.StoreDetailUpdateDelete.as_view(), name='store_detail'),
     path('api/stores/deleteAll/', views.StoreDeleteAll.as_view(),
          name='store_delete_all'),
+    
+    path('api/products/', views.ProductList.as_view()),
+     path('api/dates/', views.DateList.as_view())
 ]
